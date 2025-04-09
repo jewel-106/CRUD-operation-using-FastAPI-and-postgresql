@@ -1,0 +1,30 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.swp
+
+# Virtual Environment
+venv/
+.env/
+
+# Database
+*.db
+
+# VS Code
+.vscode/
+
+
+
+# MySQL and PostgreSQL dumps
+*.sql
+*.dump
+
+# Log files
+*.log
+
+
+
+
