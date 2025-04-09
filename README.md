@@ -110,8 +110,3 @@ You can test the API by accessing the auto-generated documentation:
 - **PUT /tasks/{task_id}**: Update a task.
 - **DELETE /tasks/{task_id}**: Delete a task.
 
-
-
-```
-
-```
