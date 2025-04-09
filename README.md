@@ -1,5 +1,3 @@
-Sure! Here's the entire `README.md` file content in one block of code:
-
 ```markdown
 # FastAPI Project
 
@@ -13,30 +11,31 @@ This is a FastAPI application with authentication, task management, and a Postgr
 - **PostgreSQL Database**: Interact with a PostgreSQL database to store user and task data.
 
 ## Project Structure
-
 ```
+
 FastApiApp/
 ├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── config.py
-│   ├── database.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── user_model.py
-│   │   └── task_model.py
-│   ├── routes/
-│   │   ├── __init__.py
-│   │   ├── auth.py
-│   │   ├── user.py
-│   │   └── task.py
-│   └── utils/
-│       ├── __init__.py
-│       ├── jwt_util.py
-│       └── hash_util.py
+│ ├── **init**.py
+│ ├── main.py
+│ ├── config.py
+│ ├── database.py
+│ ├── models/
+│ │ ├── **init**.py
+│ │ ├── user_model.py
+│ │ └── task_model.py
+│ ├── routes/
+│ │ ├── **init**.py
+│ │ ├── auth.py
+│ │ ├── user.py
+│ │ └── task.py
+│ └── utils/
+│ ├── **init**.py
+│ ├── jwt_util.py
+│ └── hash_util.py
 ├── requirements.txt
 └── .env
-```
+
+````
 
 ## Requirements
 
@@ -53,7 +52,7 @@ Follow these steps to set up the project on your local machine:
 ```bash
 git clone <repository_url>
 cd FastApiApp
-```
+````
 
 ### 2. Create and activate a virtual environment
 
@@ -111,24 +110,8 @@ You can test the API by accessing the auto-generated documentation:
 - **PUT /tasks/{task_id}**: Update a task.
 - **DELETE /tasks/{task_id}**: Delete a task.
 
-## Testing
 
-You can write unit tests for this API using FastAPI's testing utilities. Create a test file like `test_app.py` and use the `TestClient` to simulate requests.
 
-Example:
-
-```python
-from fastapi.testclient import TestClient
-from app.main import app
-
-client = TestClient(app)
-
-def test_create_user():
-    response = client.post("/users/", json={"username": "testuser", "email": "test@example.com", "password": "password"})
-    assert response.status_code == 200
-    assert response.json()["username"] == "testuser"
 ```
-
-## License
 
 ```
